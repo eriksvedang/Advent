@@ -15,6 +15,16 @@
   <body>
     <div class="main-container">
       {{ content }}
+      <div class="about">
+	<h2>{{ page.title }}</h2>
+	<p class="credits">{{ page.material }}</p>
+	<p>
+	  {{ page.blurb }}
+	</p>
+	<p>
+	  <a class="back" href="/">BACK TO CALENDAR</a>
+	</p>
+      </div>
     </div>
   </body>
 </html>

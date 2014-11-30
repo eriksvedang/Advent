@@ -90,3 +90,14 @@ canvas {
     margin-top: 80px;
     margin-bottom: 80px;
 }
+
+.back {
+    font-size: 0.75em;
+    color: #CCC;
+    font-family: Helvetica, san-serif;
+    text-decoration: none;
+}
+
+.back:hover {
+    color: #AAA;
+}
