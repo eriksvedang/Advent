@@ -72,6 +72,10 @@ a:hover .flap {
     bottom: 0px;
 }
 
+.credits {
+    font-style: italic;
+}
+
 canvas {
     padding-left: 0;
     padding-right: 0;
