@@ -1,20 +1,21 @@
+---
+---
+
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Tiny Spaceship</title>
+    <title>{{ page.title }}</title>
     <script src="js/main.js"></script>
-    <script type='text/javascript' id='lt_ws' src='http://localhost:60793/socket.io/lighttable/ws.js'></script>
     <link rel="stylesheet" type="text/css" href="../normalize.css">
     <link rel="stylesheet" type="text/css" href="../styles.css">
     <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta charset="UTF-8">
   </head>
   <body>
-    <canvas id="quilts"></canvas>
-    <div class="about">
-      <h2>Tiny Spaceship</h2>
-      <p>By Erik Svedäng</p>
-      <p>This sketch was made using the graphics library Quil for Clojure and Clojurescript.
+    <div class="main-container">
+      {{ content }}
     </div>
   </body>
 </html>
+
