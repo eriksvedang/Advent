@@ -42859,32 +42859,37 @@ quilts.sketch3.calc_y = function(a, b) {
   return b + quil.core.sin.call(null, quilts.sketch3.t.call(null) + a) * quilts.sketch3.amp;
 };
 quilts.sketch3.wave = function(a, b) {
-  for (var c = cljs.core.seq.call(null, cljs.core.range.call(null, -quil.core.width.call(null), quil.core.width.call(null), a)), d = null, e = 0, f = 0;;) {
+  quil.core.begin_shape.call(null);
+  quil.core.vertex.call(null, 0, quil.core.height.call(null));
+  for (var c = cljs.core.seq.call(null, cljs.core.range.call(null, -quil.core.width.call(null), a + quil.core.width.call(null), a)), d = null, e = 0, f = 0;;) {
     if (f < e) {
-      var g = cljs.core._nth.call(null, d, f), h = g + a, k = .01 * h;
-      quil.core.line.call(null, g, quilts.sketch3.calc_y.call(null, .01 * g, b), h, quilts.sketch3.calc_y.call(null, k, b));
+      var g = cljs.core._nth.call(null, d, f), h = quilts.sketch3.calc_y.call(null, .01 * g, b);
+      quil.core.vertex.call(null, g, h);
       f += 1;
     } else {
-      if (g = cljs.core.seq.call(null, c)) {
-        c = g, cljs.core.chunked_seq_QMARK_.call(null, c) ? (d = cljs.core.chunk_first.call(null, c), c = cljs.core.chunk_rest.call(null, c), g = d, e = cljs.core.count.call(null, d), d = g) : (g = cljs.core.first.call(null, c), d = g + a, e = .01 * d, quil.core.line.call(null, g, quilts.sketch3.calc_y.call(null, .01 * g, b), d, quilts.sketch3.calc_y.call(null, e, b)), c = cljs.core.next.call(null, c), d = null, e = 0), f = 0;
+      if (c = cljs.core.seq.call(null, c)) {
+        cljs.core.chunked_seq_QMARK_.call(null, c) ? (e = cljs.core.chunk_first.call(null, c), c = cljs.core.chunk_rest.call(null, c), d = e, e = cljs.core.count.call(null, e)) : (d = cljs.core.first.call(null, c), e = quilts.sketch3.calc_y.call(null, .01 * d, b), quil.core.vertex.call(null, d, e), c = cljs.core.next.call(null, c), d = null, e = 0), f = 0;
       } else {
-        return null;
+        break;
       }
     }
   }
+  quil.core.vertex.call(null, quil.core.width.call(null), quil.core.height.call(null));
+  return quil.core.end_shape.call(null);
 };
 quilts.sketch3.draw = function(a) {
-  quil.core.background.call(null, 245);
-  quil.core.fill.call(null, 0, 255, 255);
+  quil.core.background.call(null, 250);
+  quil.core.stroke.call(null, 255, 250);
+  quil.core.fill.call(null, 50, 230, 20 * quil.core.sin.call(null, quilts.sketch3.t.call(null)) + 230, 40);
   a = cljs.core.seq.call(null, cljs.core.range.call(null, 200, quilts.sketch3.amp + quil.core.height.call(null), 8));
   for (var b = null, c = 0, d = 0;;) {
     if (d < c) {
       var e = cljs.core._nth.call(null, b, d);
-      quilts.sketch3.wave.call(null, .8 * e - 200, e);
+      quilts.sketch3.wave.call(null, 64 + (.8 * e - 200), e);
       d += 1;
     } else {
       if (a = cljs.core.seq.call(null, a)) {
-        b = a, cljs.core.chunked_seq_QMARK_.call(null, b) ? (a = cljs.core.chunk_first.call(null, b), c = cljs.core.chunk_rest.call(null, b), b = a, e = cljs.core.count.call(null, a), a = c, c = e) : (e = cljs.core.first.call(null, b), quilts.sketch3.wave.call(null, .8 * e - 200, e), a = cljs.core.next.call(null, b), b = null, c = 0), d = 0;
+        b = a, cljs.core.chunked_seq_QMARK_.call(null, b) ? (a = cljs.core.chunk_first.call(null, b), c = cljs.core.chunk_rest.call(null, b), b = a, e = cljs.core.count.call(null, a), a = c, c = e) : (e = cljs.core.first.call(null, b), quilts.sketch3.wave.call(null, 64 + (.8 * e - 200), e), a = cljs.core.next.call(null, b), b = null, c = 0), d = 0;
       } else {
         return null;
       }
