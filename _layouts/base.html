@@ -12,19 +12,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta charset="UTF-8">
   </head>
-  <body>
-    <div class="main-container">
+  <body style="background-color: #EEE;">
+    <div class="art-piece-bg">
       {{ content }}
-      <div class="about">
-	<h2>{{ page.title }}</h2>
-	<p class="credits">{{ page.material }}</p>
-	<p>
-	  {{ page.blurb }}
-	</p>
-	<p>
-	  <a class="back" href="/">BACK TO CALENDAR</a>
-	</p>
-      </div>
+    </div>
+    <div class="about">
+      <h2>{{ page.title }}</h2>
+      <p class="credits">{{ page.material }}</p>
+      <p>
+	{{ page.blurb }}
+      </p>
+      <p>
+	<a class="back" href="/">BACK TO CALENDAR</a>
+      </p>
     </div>
 
     <script src="//static.getclicky.com/js" type="text/javascript"></script>

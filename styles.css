@@ -67,7 +67,6 @@ a:hover .flap {
 /* used on the sub pages */
 .about {
     margin: 0px;
-    background-color: #EEE;
     padding: 3em;
     bottom: 0px;
 }
@@ -81,14 +80,12 @@ canvas {
     padding-right: 0;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 150px;
-    margin-bottom: 150px;
     display: block;
 }
 
-.narrow {
-    margin-top: 80px;
-    margin-bottom: 80px;
+.art-piece-bg {
+    background-color: #FFF;
+    padding: 80px;
 }
 
 .back {
