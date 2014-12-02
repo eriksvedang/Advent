@@ -42900,7 +42900,7 @@ spaceship_a.core.setup = function() {
   quil.core.color_mode.call(null, new cljs.core.Keyword(null, "rgb", "rgb", 1432123467));
   quil.core.image_mode.call(null, new cljs.core.Keyword(null, "center", "center", -748944368));
   spaceship_a.core.load_image.call(null, new cljs.core.Keyword(null, "body", "body", -2049205669), "Body.png");
-  spaceship_a.core.load_image.call(null, new cljs.core.Keyword(null, "bg", "bg", -206688421), "Bg.png");
+  spaceship_a.core.load_image.call(null, new cljs.core.Keyword(null, "bg", "bg", -206688421), "Bg.jpg");
   spaceship_a.core.load_image.call(null, new cljs.core.Keyword(null, "star", "star", 279424429), "Star.png");
   spaceship_a.core.load_image.call(null, new cljs.core.Keyword(null, "anchor", "anchor", 1549638489), "Anchor.png");
   spaceship_a.core.load_image.call(null, new cljs.core.Keyword(null, "antenna", "antenna", -1733193971), "Antenna.png");
