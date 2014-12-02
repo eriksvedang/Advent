@@ -115,6 +115,11 @@ audio {
     margin: auto auto 20px auto;
 }
 
+.audio {
+    width: 100%;
+    max-width: 200px;
+}
+
 @media only screen and (max-width: 1100px) {
     .content {
 	width: 735px;
@@ -126,3 +131,4 @@ audio {
 	width: 550px;
     }
 }
+
