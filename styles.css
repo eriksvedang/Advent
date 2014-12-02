@@ -117,7 +117,7 @@ audio {
 
 .audio {
     width: 100%;
-    max-width: 200px;
+    max-width: 440px;
 }
 
 @media only screen and (max-width: 1100px) {
