@@ -28784,6 +28784,7 @@ cljs.core.not_empty = function(a) {
   return cljs.core.seq.call(null, a) ? a : null;
 };
 cljs.core.nil_iter = function nil_iter() {
+<<<<<<< HEAD
   "undefined" === typeof cljs.core.t6397 && (cljs.core.t6397 = function(b, c) {
     this.nil_iter = b;
     this.meta6398 = c;
@@ -28805,6 +28806,29 @@ cljs.core.nil_iter = function nil_iter() {
     return new cljs.core.t6397(b, c);
   });
   return new cljs.core.t6397(nil_iter, null);
+=======
+  "undefined" === typeof cljs.core.t6390 && (cljs.core.t6390 = function(b, c) {
+    this.nil_iter = b;
+    this.meta6391 = c;
+    this.cljs$lang$protocol_mask$partition1$ = 0;
+    this.cljs$lang$protocol_mask$partition0$ = 393216;
+  }, cljs.core.t6390.cljs$lang$type = !0, cljs.core.t6390.cljs$lang$ctorStr = "cljs.core/t6390", cljs.core.t6390.cljs$lang$ctorPrWriter = function(b, c, d) {
+    return cljs.core._write.call(null, c, "cljs.core/t6390");
+  }, cljs.core.t6390.prototype.hasNext = function() {
+    return!1;
+  }, cljs.core.t6390.prototype.next = function() {
+    return Error("No such element");
+  }, cljs.core.t6390.prototype.remove = function() {
+    return Error("Unsupported operation");
+  }, cljs.core.t6390.prototype.cljs$core$IMeta$_meta$arity$1 = function(b) {
+    return this.meta6391;
+  }, cljs.core.t6390.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(b, c) {
+    return new cljs.core.t6390(this.nil_iter, c);
+  }, cljs.core.__GT_t6390 = function(b, c) {
+    return new cljs.core.t6390(b, c);
+  });
+  return new cljs.core.t6390(nil_iter, null);
+>>>>>>> FETCH_HEAD
 };
 cljs.core.StringIter = function(a, b) {
   this.s = a;
@@ -42843,8 +42867,13 @@ quil.middleware.fun_mode = function(a) {
 quil.middleware.navigation_3d = function(a) {
   return quil.middlewares.navigation_3d.navigation_3d.call(null, a);
 };
+<<<<<<< HEAD
 var quilts = {sketch6:{}};
 quilts.sketch6.log = function() {
+=======
+var quilts = {sketch5:{}};
+quilts.sketch5.log = function() {
+>>>>>>> FETCH_HEAD
   var a = function(a) {
     return console.log(cljs.core.apply.call(null, cljs.core.str, a));
   }, b = function(b) {
@@ -42860,11 +42889,16 @@ quilts.sketch6.log = function() {
   b.cljs$core$IFn$_invoke$arity$variadic = a;
   return b;
 }();
+<<<<<<< HEAD
 quilts.sketch6.setup = function() {
+=======
+quilts.sketch5.setup = function() {
+>>>>>>> FETCH_HEAD
   quil.core.frame_rate.call(null, 100);
   quil.core.background.call(null, 230);
   return 0;
 };
+<<<<<<< HEAD
 quilts.sketch6.m = function() {
   var a = quil.core.width.call(null) / 2, b = a - quil.core.mouse_x.call(null);
   return quil.core.abs.call(null, b) / a;
@@ -42873,16 +42907,31 @@ quilts.sketch6.update = function(a) {
   return a + (100 - 99 * quilts.sketch6.m.call(null));
 };
 quilts.sketch6.pulse = function(a, b, c, d) {
+=======
+quilts.sketch5.m = function() {
+  var a = quil.core.width.call(null) / 2, b = a - quil.core.mouse_x.call(null);
+  return quil.core.abs.call(null, b) / a;
+};
+quilts.sketch5.update = function(a) {
+  return a + (100 - 99 * quilts.sketch5.m.call(null));
+};
+quilts.sketch5.pulse = function(a, b, c, d) {
+>>>>>>> FETCH_HEAD
   c = (c - b) / 2;
   b += c;
   a = quil.core.sin.call(null, a / 1E3 * (1 / d));
   return b + a * c;
 };
+<<<<<<< HEAD
 quilts.sketch6.draw = function(a) {
+=======
+quilts.sketch5.draw = function(a) {
+>>>>>>> FETCH_HEAD
   quil.core.no_stroke.call(null);
   var b = quil.core.width.call(null) / 2, c = quil.core.height.call(null) / 2, d = .005 * quil.core.millis.call(null), b = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [b, c], null);
   quil.core.push_matrix.call(null);
   quil.core.translate.call(null, b);
+<<<<<<< HEAD
   quil.core.fill.call(null, quilts.sketch6.pulse.call(null, a, 100, 200, 1), quilts.sketch6.pulse.call(null, a, 100, 200, 2), quilts.sketch6.pulse.call(null, a, 100, 200, 3), 100);
   b = 90 + 20 * quilts.sketch6.m.call(null);
   d = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [d], null);
@@ -42972,6 +43021,21 @@ quilts.sketch5.run_sketch_5 = function() {
   quilts.sketch5.quilts = function() {
     return quil.sketch.sketch.call(null, new cljs.core.Keyword(null, "draw", "draw", 1358331674), quilts.sketch5.draw, new cljs.core.Keyword(null, "middleware", "middleware", 1462115504), new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [quil.middleware.fun_mode], null), new cljs.core.Keyword(null, "setup", "setup", 1987730512), quilts.sketch5.setup, new cljs.core.Keyword(null, "size", "size", 1098693007), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, 
     [800, 600], null), new cljs.core.Keyword(null, "update", "update", 1045576396), quilts.sketch5.update, new cljs.core.Keyword(null, "host", "host", -1558485167), "quilts");
+=======
+  quil.core.fill.call(null, quilts.sketch5.pulse.call(null, a, 100, 200, 1), quilts.sketch5.pulse.call(null, a, 100, 200, 2), quilts.sketch5.pulse.call(null, a, 100, 200, 3), 100);
+  b = 90 + 20 * quilts.sketch5.m.call(null);
+  d = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [d], null);
+  quil.core.push_matrix.call(null);
+  cljs.core.apply.call(null, quil.core.rotate, d);
+  quil.core.ellipse.call(null, quilts.sketch5.pulse.call(null, a, 110, 260, 1), 0, b, b);
+  quil.core.pop_matrix.call(null);
+  return quil.core.pop_matrix.call(null);
+};
+quilts.sketch5.run_sketch_5 = function() {
+  quilts.sketch5.quilts = function() {
+    return quil.sketch.sketch.call(null, new cljs.core.Keyword(null, "draw", "draw", 1358331674), quilts.sketch5.draw, new cljs.core.Keyword(null, "middleware", "middleware", 1462115504), new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [quil.middleware.fun_mode], null), new cljs.core.Keyword(null, "setup", "setup", 1987730512), quilts.sketch5.setup, new cljs.core.Keyword(null, "size", "size", 1098693007), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, 
+    [700, 700], null), new cljs.core.Keyword(null, "update", "update", 1045576396), quilts.sketch5.update, new cljs.core.Keyword(null, "host", "host", -1558485167), "quilts");
+>>>>>>> FETCH_HEAD
   };
   goog.exportSymbol("quilts.sketch5.quilts", quilts.sketch5.quilts);
   return cljs.core.truth_(cljs.core.some.call(null, function(a) {
@@ -43421,4 +43485,8 @@ quilts.sketch1.run_sketch_1 = function() {
   }, null)) ? null : quil.sketch.add_sketch_to_init_list.call(null, new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "fn", "fn", -1175266204), quilts.sketch1.quilts, new cljs.core.Keyword(null, "host-id", "host-id", 742376279), "quilts"], null));
 };
 quilts.core = {};
+<<<<<<< HEAD
 quilts.sketch6.run_sketch_6.call(null);
+=======
+quilts.sketch5.run_sketch_5.call(null);
+>>>>>>> FETCH_HEAD
